@@ -169,7 +169,6 @@ html, body {
                         "aboutMe"
                         "myLink";
     }
-
     .name {
         align-self: center;
         justify-self: center;
@@ -178,7 +177,6 @@ html, body {
             font-size: 55px;
         }
     }
-
     nav{
         align-self: center;
         align-content: end;
@@ -207,7 +205,6 @@ html, body {
         margin: 0 30px;
         text-align:justify;
     }
-
     @media (max-height: 800px) {
         .about {
             grid-template-columns: 0.5fr 1fr;
@@ -230,7 +227,7 @@ html, body {
             margin: 0;
         }
     }
-    @media(max-height: 450px) {
+    @media(max-height: 480px) {
         .burgerMenu {
             width: 30px;
             height: 30px;
@@ -245,7 +242,7 @@ html, body {
         .about{
             padding-top: 10px;
             row-gap: 10px;
-            grid-template-columns: 0.3fr 1fr;
+            grid-template-columns: 0.5fr 1fr;
             grid-template-rows: 0.3fr 0.4fr 0.6fr;
             grid-template-areas: 
                                 "myLink myNav"
@@ -255,22 +252,19 @@ html, body {
         .name {
             > h1 {
                 justify-self: start;
-                font-size: 20px;
+                font-size: 45px;
             }
             > p{
-                font-size: 16px;
+                font-size: 30px;
             }
-        }
-        .main-link{
-            align-self: center;
-            margin-top: 0;
         }
         .myPhoto{
             align-self: center;
-            width: 200px;
+            width: 300px;
         }
         .main-link {
             justify-self: end;
+            align-self: center;
             > a {
                 font-size: 10px;
                 width: 80px;
@@ -281,8 +275,38 @@ html, body {
             }
         }
         .about-me{
-            font-size: 12px;
+            font-size: 20px;
             line-height: 20px;
+            margin-right: 20px;
+        }
+    }
+    @media (max-height: 400px) {
+        .myPhoto{
+            width: 200px;
+        }
+    }
+    @media (max-height: 300px) {
+        .about{
+            grid-template-columns: 0.2fr 1fr;
+            gap: 30px;
+        }
+        .myPhoto {
+            width: 150px;
+        }
+        .name {
+            align-self: center;
+            > h1 {
+                justify-self: start;
+                font-size: 25px;
+            }
+            > p{
+                font-size: 20px;
+            }
+        }
+        .about-me{
+            font-size: 16px;
+            line-height: 20px;
+            margin-right: 20px;
         }
     }
 }
