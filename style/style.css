@@ -2,6 +2,7 @@
 html, body {
   overflow: hidden; /* буде ні прокрутки, ні смужок */
   font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
 }
 
 .paralax-slider__bg {
@@ -16,7 +17,7 @@ html, body {
 }
 
 .swiper-slide {
-  background-color: rgba(128, 128, 128, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
 }
 
@@ -27,7 +28,7 @@ html, body {
 }
 
 .swiper-slide {
-  box-shadow: 20px 0px 100px, -20px 0px 100px;
+  box-shadow: 20px 0px 100px #000, -20px 0px 100px #000;
 }
 
 .active-nav {

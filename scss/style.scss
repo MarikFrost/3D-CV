@@ -2,6 +2,7 @@ $font: "Ubuntu", sans-serif;
 html, body {
   overflow: hidden; /* буде ні прокрутки, ні смужок */
   font-family: $font;
+  color: #ffffff;
 }
 .paralax-slider__bg {
     background-image: url(./../img/222.jpg);
@@ -14,7 +15,7 @@ html, body {
     background-position: center;
 }
 .swiper-slide {
-    background-color: rgba(128, 128, 128, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
 }
 .swiper-wrapper{
@@ -23,7 +24,7 @@ html, body {
     margin: 0 auto;
 }
 .swiper-slide {
-    box-shadow: 20px 0px 100px, -20px 0px 100px;
+    box-shadow: 20px 0px 100px #000, -20px 0px 100px #000;
 }
 .active-nav {
     font-weight: 600;
