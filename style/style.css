@@ -274,6 +274,32 @@ nav > ul {
     font-size: 14px;
   }
 }
+@media ((max-width: 768px) and (max-height: 430px)) {
+  .about {
+    padding-top: 10px;
+    row-gap: 10px;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.3fr 0.4fr 0.6fr;
+    grid-template-areas: "myNav myLink" "myPhoto myName" "myPhoto aboutMe";
+  }
+  .main-link {
+    align-self: center;
+    margin-top: 0;
+  }
+  .main-link > .main-link-skills {
+    display: none;
+  }
+  .name > h1 {
+    justify-self: start;
+    font-size: 30px;
+  }
+  .name p {
+    font-size: 20px;
+  }
+  .about-me {
+    font-size: 14px;
+  }
+}
 @media (max-width: 450px) {
   .about {
     padding: 30px 15px;
@@ -297,17 +323,6 @@ nav > ul {
     width: 110px;
     font-size: 14px;
   }
-  /*nav{
-      justify-self: start;
-
-      > ul {
-          display: none;
-      }
-  }
-  .burgerMenu{
-      display: flex;
-      left: 0;
-  }*/
 }
 @media ((max-width: 450px) and (max-width: 800px)) {
   .about {
