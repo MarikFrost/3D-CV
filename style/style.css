@@ -36,7 +36,7 @@ html, body {
 }
 
 .about {
-  min-width: 335px;
+  min-width: 250px;
   display: grid;
   height: 100vh;
   max-width: 1220px;
@@ -190,7 +190,7 @@ nav > ul {
     text-align: justify;
   }
 }
-@media ((max-width: 1063px) and (max-height: 800px)) {
+@media (max-width: 1063px) and (max-height: 800px) {
   .about {
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 0.5fr auto auto 1fr;
@@ -207,6 +207,55 @@ nav > ul {
   }
   .about-me {
     margin: 0;
+  }
+}
+@media (max-width: 1063px) and (max-height: 450px) {
+  .burgerMenu {
+    width: 30px;
+    height: 30px;
+    gap: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burgerMenu > div {
+    width: 15px;
+    height: 2px;
+  }
+  .about {
+    padding-top: 10px;
+    row-gap: 10px;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.3fr 0.4fr 0.6fr;
+    grid-template-areas: "myNav myLink" "myPhoto myName" "myPhoto aboutMe";
+  }
+  .name > h1 {
+    justify-self: start;
+    font-size: 20px;
+  }
+  .name > p {
+    font-size: 16px;
+  }
+  .main-link {
+    align-self: center;
+    margin-top: 0;
+  }
+  .myPhoto {
+    align-self: center;
+  }
+  .main-link {
+    justify-self: end;
+  }
+  .main-link > a {
+    font-size: 10px;
+    width: 80px;
+    height: 30px;
+  }
+  .main-link > .main-link-skills {
+    display: none;
+  }
+  .about-me {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -232,16 +281,6 @@ nav > ul {
     display: flex;
     left: 0;
   }
-  /*  .burgerMenu{
-        display: none;
-    }
-    nav {
-        > ul {
-            display: flex;
-            gap: 15px;
-            font-size: 15px;
-        }
-    }*/
   .main-link {
     gap: 15px;
   }
@@ -249,7 +288,7 @@ nav > ul {
     width: 130px;
   }
 }
-@media ((max-width: 768px) and (max-height: 800px)) {
+@media (max-width: 768px) and (max-height: 800px) {
   .about {
     padding-top: 15px;
     grid-template-columns: 0.5fr 1fr;
@@ -274,7 +313,18 @@ nav > ul {
     font-size: 14px;
   }
 }
-@media ((max-width: 768px) and (max-height: 430px)) {
+@media (max-width: 768px) and (max-height: 430px) {
+  .burgerMenu {
+    width: 30px;
+    height: 30px;
+    gap: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burgerMenu > div {
+    width: 15px;
+    height: 2px;
+  }
   .about {
     padding-top: 10px;
     row-gap: 10px;
@@ -282,22 +332,34 @@ nav > ul {
     grid-template-rows: 0.3fr 0.4fr 0.6fr;
     grid-template-areas: "myNav myLink" "myPhoto myName" "myPhoto aboutMe";
   }
+  .name > h1 {
+    justify-self: start;
+    font-size: 20px;
+  }
+  .name > p {
+    font-size: 16px;
+  }
   .main-link {
     align-self: center;
     margin-top: 0;
   }
+  .myPhoto {
+    align-self: center;
+  }
+  .main-link {
+    justify-self: end;
+  }
+  .main-link > a {
+    font-size: 10px;
+    width: 80px;
+    height: 30px;
+  }
   .main-link > .main-link-skills {
     display: none;
   }
-  .name > h1 {
-    justify-self: start;
-    font-size: 30px;
-  }
-  .name p {
-    font-size: 20px;
-  }
   .about-me {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 @media (max-width: 450px) {
@@ -324,153 +386,48 @@ nav > ul {
     font-size: 14px;
   }
 }
-@media ((max-width: 450px) and (max-width: 800px)) {
+@media (max-width: 450px) and (max-height: 800px) {
+  .burgerMenu {
+    width: 30px;
+    height: 30px;
+    gap: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burgerMenu > div {
+    width: 15px;
+    height: 2px;
+  }
   .about {
     padding-top: 10px;
     row-gap: 10px;
     grid-template-columns: 0.2fr 1fr;
     grid-template-areas: "myNav myLink" "myName myName" "myPhoto myPhoto" "aboutMe aboutMe";
   }
+  .name h1 {
+    font-size: 20px;
+    justify-self: center;
+  }
+  .name p {
+    font-size: 16px;
+  }
+  .myPhoto {
+    width: 120px;
+    height: 120px;
+  }
   .main-link {
     align-self: center;
     margin-top: 0;
+    justify-self: end;
+    gap: 10px;
+  }
+  .main-link > a {
+    font-size: 10px;
+    width: 70px;
+    height: 25px;
+  }
+  .about-me {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
-/*@media (max-width: 1200px) {
-    @media(max-height: 500px) {
-        .about {
-            max-width: 1220px;
-            padding: 10px 15px;
-            margin: 0 auto;
-            display: grid;
-            column-gap: 20px;
-            height: 100vh;
-            grid-template-columns: 0.5fr 1fr;
-            grid-template-rows: repeat(5, auto);
-            grid-template-areas: 
-                                "myPhoto myNav"
-                                "myPhoto myName"
-                                "myPhoto helloInfo"
-                                "myPhoto aboutMe"
-                                "myPhoto myLink";
-        }
-        .name{
-            margin-top: 15px;
-        }
-        .hello-info{
-            align-self: start;
-        }
-        .myPhoto {
-            justify-self: center;
-        }
-        .main-link {
-            align-self: start;
-            justify-self: left;
-        }
-        .main-link > a{
-            display: flex;
-            width: 150px;
-            height: 40px;
-            border-radius: 10px;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-        }
-
-    }
-    @media(max-height: 350px) {
-        .about {
-            grid-template-rows: repeat(4, auto);
-            grid-template-areas: 
-                                "myPhoto myNav"
-                                "myPhoto myName"
-                                "myPhoto aboutMe"
-                                "myPhoto myLink";
-        }
-        .hello-info{
-            display: none;
-        }
-        .myPhoto{
-            height: 250px;
-            width: 250px;
-        }
-        .about-me{
-            font-size: 16px;
-        }
-    }*/
-/*  
-  .name {
-  }
-  .name > h1 {
-      font-size: 30px;
-      font-weight: 600;
-  }
-  .name > p{
-      font-size: 20px;
-  }
-  nav{
-      grid-area: myNav;
-      align-self: center;
-  }
-  nav ul{
-      display: flex;
-      gap: 30px;
-      font-size: 20px;
-      }
-
-  .myPhoto{
-      min-width: 100px;
-      min-height: 100px;
-      width: 100%;
-      height: 100%;
-      max-width: 300px;
-      max-height: 300px;
-      border-radius: 100%;
-      grid-area: myPhoto;
-      align-self: center;
-  }
-
-  .hello-info{
-      font-size: 35px;
-      font-weight: 500;
-      //align-self: end;
-      grid-area: helloInfo;
-  }            
-  .hello-info > span{
-      font-size: 70px;
-      font-weight: 500;
-  }
-
-  .main-link{
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      grid-area: myLink;
-      align-self: center;
-  }
-  .main-link > a{
-      display: flex;
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      padding: 0 5px;
-      text-align: center;
-  }
-  .main-link-cv{
-      background-color: rgb(243, 41, 109);
-  }
-      .main-link-git{
-      background-color: rgb(41, 213, 243);
-  }
-      .main-link-skills{
-      background-color: rgb(245, 232, 47);
-  }
-  .about-me{
-      font-size: 20px;
-      line-height: 30px;
-      grid-area: aboutMe;
-  }*/
-/*}*/
